@@ -1,5 +1,5 @@
 # Welcome to Jekyll!
-# teaser 
+# _post  
 # This config file is meant for settings that affect your entire site, values
 # which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale                   : "zh-TW"
-title                    : "LLY的不專業烤肉本店🍖"
+title                    : "LLY的不專業烤肉本店"
 title_separator          : "-"
 subtitle                 : "If there is any question, please contact."
 name                     : 
@@ -25,7 +25,7 @@ url                      : # the base hostname & protocol for your site e.g. "ht
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : tf10210224/tf10210224.github.io
 teaser                   : "/assets/images/kaorou.jpg"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "🍖"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
