@@ -13,6 +13,6 @@ breadcrumbs:
 ---
 　　架網站好難好想放棄
 
-<a href="https://www.youtube.com/watch?v=VEg9_AvZv-I"
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=VEg9_AvZv-I/0
 " target="_blank"><img src="http://img.youtube.com/vi/VEg9_AvZv-I/0.jpg" 
 alt="星導晶 Layers of Fear" width="240" height="180" border="10" /></a>
