@@ -14,6 +14,6 @@ breadcrumbs:
 　　架網站好難好想放棄
 　　使用Minimal Mistakes Jekyll theme
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
-" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+<a href="https://www.youtube.com/watch?v=VEg9_AvZv-I"
+" target="_blank"><img src="http://img.youtube.com/vi/VEg9_AvZv-I/0.jpg" 
+alt="星導晶 Layers of Fear" width="240" height="180" border="10" /></a>
