@@ -1,0 +1,103 @@
+name: Emscripten
+
+on:
+  push:
+    branches: [master, ci]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Cancel previous runs
+      uses: styfle/cancel-workflow-action@0.11.0
+      with:
+          access_token: ${{ github.token }}
+          all_but_latest: true
+
+    - name: Checkout Base Repo
+      uses: actions/checkout@v3
+
+    - name: Prepare Submodules
+      run: |
+        git submodule sync
+        git submodule update --init --recursive --force
+        mv lib lib_
+
+    - name: Calculate Hash Key
+      id: cache_config
+      run: |
+        # Invalidate cache if submodules, patches or emscripten version changed
+        key="$(find build/patches/ -type f | sort | xargs cat .gitmodules Dockerfile \
+               Makefile Makefile_licence | shasum -a 256 | cut -d' ' -f1)"
+        echo "key=0-${key}" >> $GITHUB_OUTPUT
+
+    - name: Ensure Cache will be newer than Checkout
+      run: |
+        find . -exec touch -d 1971-01-01T00:00:00 '{}' +
+
+    - name: Retrieve Cached Built Dependencies
+      uses: actions/cache@v3
+      id: cache
+      with:
+        key: ${{ steps.cache_config.outputs.key }}
+        path: |
+          lib
+          build/lib
+          dist/libraries
+          dist/license/*
+          !dist/license/subtitlesoctopus
+          !dist/license/all*
+          /tmp/emcc_lto
+
+    - name: Checkout Submodules
+      if: steps.cache.outputs.cache-hit != 'true'
+      run: |
+        mv lib_ lib
+
+    - name: Build Docker Image
+      run: |
+        docker build -t libass/jso .
+
+    - name: Build Binaries
+      run: |
+        mkdir -p /tmp/emcc_lto
+        docker run --rm --env LC_ALL=C.UTF-8 -v "${PWD}":/code -v "/tmp/emcc_lto:/emsdk/upstream/emscripten/cache/sysroot/lib/wasm32-emscripten/lto" libass/jso:latest
+
+    - name: Upload Nightly Build
+      uses: actions/upload-artifact@v3
+      if: (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/master'
+      with:
+        name: js
+        path: dist/js
+
+
+  update_gh-pages:
+    if: (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/master'
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          ref: gh-pages
+
+      - name: Remove old assets
+        run: rm -fr assets/js
+
+      - name: Download nightly build
+        uses: actions/download-artifact@v3
+        with:
+          name: js
+          path: assets/js
+
+      - name: Push new version
+        run: |
+          git config --global user.email "actions@noreply.github.com"
+          git config --global user.name "GitHub Action"
+          git add assets/js
+          (git commit -m "$(printf \
+            "Update binaries to latest nightly\n\nFrom %s" "${{ github.sha }}")" \
+           && git push origin gh-pages) \
+           || : # Ignore if nothing changed
