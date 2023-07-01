@@ -1,5 +1,5 @@
 # Welcome to Jekyll!
-# repository 
+# teaser 
 # This config file is meant for settings that affect your entire site, values
 # which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
@@ -12,19 +12,19 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakess@4.18.1"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "zh-TW"
 title                    : "LLY的不專業烤肉本店🍖"
 title_separator          : "-"
-subtitle                 : "If there is any question, please contact Twi:@Tf10210224"
+subtitle                 : "If there is any question, please contact."
 name                     : 
 description              : 
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : tf10210224/tf10210224.github.io
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "/assets/images/kaorou.jpg"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
@@ -104,7 +104,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "LanLingYe"
+  name             : "網站&翻譯: LanLingYe"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "🌈🕒"
   location         : "Taiwan"
@@ -112,7 +112,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:hanayo.pompompurin@email.com"
+      # url: "mailto:"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
