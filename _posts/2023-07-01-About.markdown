@@ -11,4 +11,5 @@ breadcrumbs:
     url: /
   - name: About
 ---
-使用Minimal Mistakes Jekyll theme
+　　架網站好難好想放棄
+　　使用Minimal Mistakes Jekyll theme
