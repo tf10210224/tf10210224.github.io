@@ -24,7 +24,7 @@ description              :
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : tf10210224/tf10210224.github.io
-teaser                   : "/assets/images/kaorou.jpg"
+#teaser                   : "/assets/images/kaorou.jpg"
 logo                     : "/assets/images/meat emoji.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true #false (default)
@@ -286,8 +286,8 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
-      read_time: true
-      comments: # true
+      author_profile: #true
+      read_time: #true
+      comments: #true
       share: true
       related: true
