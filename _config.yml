@@ -25,7 +25,7 @@ url                      : # the base hostname & protocol for your site e.g. "ht
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : tf10210224/tf10210224.github.io
 teaser                   : "/assets/images/kaorou.jpg"
-logo                     : "🍖"
+logo                     : "/assets/images/meat emoji.jpg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -104,10 +104,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "網站&翻譯: LanLingYe"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "🌈🕒"
-  location         : "Taiwan"
+  name             : "LanLingYe"
+  avatar           : "/assets/images/icon.jpg"
+  bio              : "翻譯&架網站新手"
+  location         : "🌈🕒"
   email            :
   links:
     - label: "Email"
