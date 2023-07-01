@@ -13,7 +13,7 @@ breadcrumbs:
 ---
 　　架網站好難好想放棄
 
-<div id="contain">
+<div id="contain" style="border: 50px rgba(255, 255, 255, 0) solid;">
   <iframe width="960" height="540" src="https://www.youtube.com/embed/VEg9_AvZv-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   <canvas id="canvas" width="1920" height="1080" style="width: 100%; height: 100%;"></canvas>
 </div>
