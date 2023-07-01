@@ -156,6 +156,7 @@ footer:
 include:
   - .htaccess
   - _pages
+  - breadcrumbs.html
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -299,3 +300,4 @@ defaults:
     values:
       layout: single
       author_profile: true
+
