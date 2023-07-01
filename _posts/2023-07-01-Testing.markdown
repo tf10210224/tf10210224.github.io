@@ -13,7 +13,6 @@ breadcrumbs:
 ---
 　　架網站好難好想放棄
 
-<div id="video">
-<div  style="border: 20px rgba(255, 255, 255, 0) solid;>
-  <iframe width="1280" height="720" src="https://www.youtube.com/embed/VEg9_AvZv-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<div id="video" style="border: 20px rgba(255, 255, 255, 0) solid;">
+  <iframe width="960" height="540" src="https://www.youtube.com/embed/VEg9_AvZv-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
