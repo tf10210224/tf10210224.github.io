@@ -17,15 +17,3 @@ breadcrumbs:
   <iframe width="960" height="540" src="https://www.youtube.com/embed/VEg9_AvZv-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   <canvas id="canvas" width="1920" height="1080" style="width: 100%; height: 100%;"></canvas>
 </div>
-
-```javascript
-  var options = {
-      canvas: document.getElementById('canvas'), // canvas element
-      subUrl: '/assets/sub/LOF.ass', // Link to subtitles
-      fonts: ['/assets/sub/msyh.ttc', '/assets/sub/msyhbd.ttc'], // Links to fonts (not required, default font already included in build)
-      workerUrl: '/libassjs-worker.js' // Link to file "libassjs-worker.js"
-  };
-  var instance = new SubtitlesOctopus(options);
-  // And then...
-  instance.setCurrentTime(15); // Render subtitles at 00:15 on your canvas
-```
