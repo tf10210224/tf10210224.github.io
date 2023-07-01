@@ -103,35 +103,34 @@ analytics:
 
 
 # Site Author
-footer:
-  author:
-    name             : "LanLingYe"
-    avatar           : "/assets/images/icon.jpg"
-    bio              : "翻譯&架網站新手"
-    location         : "🌈🕒"
-    email            :
-    links:
-      - label: "Email"
-        icon: "fas fa-fw fa-envelope-square"
-        # url: "mailto:"
-      - label: "Website"
-        icon: "fas fa-fw fa-link"
-        # url: "https://your-website.com"
-      - label: "Twitter"
-        icon: "fab fa-fw fa-twitter-square"
-        url: "https://twitter.com/Tf10210224"
-      - label: "Facebook"
-        icon: "fab fa-fw fa-facebook-square"
-        url: "https://www.facebook.com/profile.php?id=100013287289280"
-      - label: "GitHub"
-        icon: "fab fa-fw fa-github"
-        # url: "https://github.com/"
-      - label: "Instagram"
-        icon: "fab fa-fw fa-instagram"
-        url: "https://www.instagram.com/lingye.l_66_/"
+author:
+  name             : "LanLingYe"
+  avatar           : "/assets/images/icon.jpg"
+  bio              : "翻譯&架網站新手"
+  location         : "🌈🕒"
+  email            :
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      # url: "mailto:"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      # url: "https://your-website.com"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/Tf10210224"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://www.facebook.com/profile.php?id=100013287289280"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      # url: "https://github.com/"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/lingye.l_66_/"
 
 # Site Footer
-#footer:
+footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
