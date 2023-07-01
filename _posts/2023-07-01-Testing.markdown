@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "TESTING"
+date:   2023-07-01 08:00:00 +0800
+categories:
+- About
+tags:
+- About
+breadcrumbs:
+  - name: Home
+    url: /
+  - name: About
+---
+　　架網站好難好想放棄
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=VEg9_AvZv-I/0
+" target="_blank"><img src="http://img.youtube.com/vi/VEg9_AvZv-I/0.jpg" 
+alt="星導晶 Layers of Fear" width="240" height="180" border="10" /></a>
