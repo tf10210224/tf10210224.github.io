@@ -131,7 +131,7 @@ footer:
         url: "https://www.instagram.com/lingye.l_66_/"
 
 # Site Footer
-footer:
+#footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
