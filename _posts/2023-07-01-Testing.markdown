@@ -14,14 +14,3 @@ breadcrumbs:
 　　架網站好難好想放棄
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VEg9_AvZv-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-```javascript
-var options = {
-    video: document.getElementById('video'), // HTML5 video element
-    subUrl: '/assets/sub/LOF.ass', // Link to subtitles
-    //fonts: ['/test/font-1.ttf', '/test/font-2.ttf'], // Links to fonts (not required, default font already included in build)
-    workerUrl: '/libassjs-worker.js', // Link to WebAssembly-based file "libassjs-worker.js"
-    legacyWorkerUrl: '/libassjs-worker-legacy.js' // Link to non-WebAssembly worker
-};
-var instance = new SubtitlesOctopus(options);
-```
