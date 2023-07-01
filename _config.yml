@@ -25,9 +25,9 @@ url                      : # the base hostname & protocol for your site e.g. "ht
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : tf10210224/tf10210224.github.io
 teaser                   : "/assets/images/kaorou.jpg"
-logo                     : "/assets/images/meat emoji.jpg"
+logo                     : "/assets/images/meat emoji.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : true #false (default)
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
