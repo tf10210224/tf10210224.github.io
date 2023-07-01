@@ -12,14 +12,3 @@ breadcrumbs:
   - name: About
 ---
 　　架網站好難好想放棄
-
-```javascript
-var options = {
-    video: document.getElementById('VEg9_AvZv-I/0'), // HTML5 video element
-    subUrl: '/assets/sub/LOF.ass', // Link to subtitles
-    //fonts: ['/test/font-1.ttf', '/test/font-2.ttf'], // Links to fonts (not required, default font already included in build)
-    workerUrl: '/libassjs-worker.js', // Link to WebAssembly-based file "libassjs-worker.js"
-    legacyWorkerUrl: '/libassjs-worker-legacy.js' // Link to non-WebAssembly worker
-};
-var instance = new SubtitlesOctopus(options);
-```
